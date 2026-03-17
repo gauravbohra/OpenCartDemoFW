@@ -1,0 +1,46 @@
+2026-09-17 16:09:28 INFO  TC002LoginTest:38 - Finished test *** TC002LoginTest ***
+2026-17-17 16:17:41 INFO  TC001AccountRegistrationTest:13 - Starting test *** TC_001_AccountRegistrationTest ***
+2026-17-17 16:17:42 INFO  TC001AccountRegistrationTest:18 - Clicked my account button
+2026-17-17 16:17:43 INFO  TC001AccountRegistrationTest:20 - Clicked register button
+2026-17-17 16:17:43 INFO  TC001AccountRegistrationTest:22 - Entering user details for new registration: 
+2026-17-17 16:17:45 INFO  TC001AccountRegistrationTest:36 - Submitted user details for new registration
+2026-17-17 16:17:45 INFO  TC001AccountRegistrationTest:38 - Validating success message
+2026-17-17 16:17:45 INFO  TC001AccountRegistrationTest:40 - Test passed
+2026-17-17 16:17:45 INFO  TC001AccountRegistrationTest:47 - Test completed *** TC_001_AccountRegistrationTest ***
+2026-17-17 16:17:50 INFO  TC002LoginTest:15 - Starting test *** TC002LoginTest ***
+2026-17-17 16:17:51 INFO  TC002LoginTest:20 - Clicked my account button
+2026-17-17 16:17:51 INFO  TC002LoginTest:22 - Clicked login button
+2026-17-17 16:17:51 INFO  TC002LoginTest:27 - Entered valid user email and password
+2026-17-17 16:17:52 INFO  TC002LoginTest:29 - Clicked login button
+2026-17-17 16:17:52 INFO  TC002LoginTest:33 - login successful
+2026-17-17 16:17:52 INFO  TC002LoginTest:38 - Finished test *** TC002LoginTest ***
+2026-18-17 16:18:40 INFO  TC001AccountRegistrationTest:13 - Starting test *** TC_001_AccountRegistrationTest ***
+2026-18-17 16:18:40 INFO  TC001AccountRegistrationTest:18 - Clicked my account button
+2026-18-17 16:18:41 INFO  TC001AccountRegistrationTest:20 - Clicked register button
+2026-18-17 16:18:41 INFO  TC001AccountRegistrationTest:22 - Entering user details for new registration: 
+2026-18-17 16:18:44 INFO  TC001AccountRegistrationTest:36 - Submitted user details for new registration
+2026-18-17 16:18:44 INFO  TC001AccountRegistrationTest:38 - Validating success message
+2026-18-17 16:18:44 INFO  TC001AccountRegistrationTest:40 - Test passed
+2026-18-17 16:18:44 INFO  TC001AccountRegistrationTest:47 - Test completed *** TC_001_AccountRegistrationTest ***
+2026-18-17 16:18:50 INFO  TC002LoginTest:15 - Starting test *** TC002LoginTest ***
+2026-18-17 16:18:50 INFO  TC002LoginTest:20 - Clicked my account button
+2026-18-17 16:18:50 INFO  TC002LoginTest:22 - Clicked login button
+2026-18-17 16:18:51 INFO  TC002LoginTest:27 - Entered valid user email and password
+2026-18-17 16:18:52 INFO  TC002LoginTest:29 - Clicked login button
+2026-18-17 16:18:52 INFO  TC002LoginTest:33 - login successful
+2026-18-17 16:18:52 INFO  TC002LoginTest:38 - Finished test *** TC002LoginTest ***
+2026-19-17 16:19:25 INFO  TC001AccountRegistrationTest:13 - Starting test *** TC_001_AccountRegistrationTest ***
+2026-19-17 16:19:26 INFO  TC001AccountRegistrationTest:18 - Clicked my account button
+2026-19-17 16:19:27 INFO  TC001AccountRegistrationTest:20 - Clicked register button
+2026-19-17 16:19:27 INFO  TC001AccountRegistrationTest:22 - Entering user details for new registration: 
+2026-19-17 16:19:29 INFO  TC001AccountRegistrationTest:36 - Submitted user details for new registration
+2026-19-17 16:19:29 INFO  TC001AccountRegistrationTest:38 - Validating success message
+2026-19-17 16:19:29 INFO  TC001AccountRegistrationTest:40 - Test passed
+2026-19-17 16:19:29 INFO  TC001AccountRegistrationTest:47 - Test completed *** TC_001_AccountRegistrationTest ***
+2026-19-17 16:19:42 INFO  TC002LoginTest:15 - Starting test *** TC002LoginTest ***
+2026-19-17 16:19:43 INFO  TC002LoginTest:20 - Clicked my account button
+2026-19-17 16:19:43 INFO  TC002LoginTest:22 - Clicked login button
+2026-19-17 16:19:44 INFO  TC002LoginTest:27 - Entered valid user email and password
+2026-19-17 16:19:46 INFO  TC002LoginTest:29 - Clicked login button
+2026-19-17 16:19:46 INFO  TC002LoginTest:33 - login successful
+2026-19-17 16:19:46 INFO  TC002LoginTest:38 - Finished test *** TC002LoginTest ***

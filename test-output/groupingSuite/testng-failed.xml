@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [groupingSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ExtentReportUtility"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="groupTest(failed)">
+    <parameter name="os" value="linux"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC003LoginDDT">
+        <methods>
+          <include name="verify_Login_DDT" invocation-numbers="2"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC003LoginDDT -->
+    </classes>
+  </test> <!-- groupTest(failed) -->
+</suite> <!-- Failed suite [groupingSuite] -->
