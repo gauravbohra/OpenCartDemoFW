@@ -18,7 +18,9 @@ public class DriverFactory {
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless=new");
+                options.addArguments("--disable-gpu");
                 options.addArguments("--no-sandbox");
+                options.addArguments("--start-maximized");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
