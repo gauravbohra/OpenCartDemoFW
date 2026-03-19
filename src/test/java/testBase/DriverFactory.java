@@ -18,6 +18,7 @@ public class DriverFactory {
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
