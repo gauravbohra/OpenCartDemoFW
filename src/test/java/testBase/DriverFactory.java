@@ -17,6 +17,7 @@ public class DriverFactory {
         switch (browser.toLowerCase()){
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
