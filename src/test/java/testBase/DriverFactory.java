@@ -25,6 +25,8 @@ public class DriverFactory {
                 break;
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless=new");
+                firefoxOptions.addArguments("--disable-gpu");
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
             case "edge":
