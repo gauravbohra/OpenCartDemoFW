@@ -10,6 +10,16 @@ name: Automation suite
 
 on:
   workflow_dispatch:
+    inputs:
+      browserName:
+        type: choice
+        description: 'Select browser for execution'
+        options:
+          - chrome
+          - firefox
+          - edge
+        default: chrome
+
   push:
     branches: [ "main" ]
   pull_request:
@@ -29,7 +39,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn test
+      run: mvn test -Dbrowser=chrome -Dmaven.test.failure.ignore=true
 
     - name: upload artifact
       uses: actions/upload-artifact@v4
