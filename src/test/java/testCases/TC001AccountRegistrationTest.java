@@ -1,11 +1,13 @@
 package testCases;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.NewRegistrationPage;
 import testBase.BaseTest;
 
+@Listeners(utils.ExtentReportUtility.class)
 public class TC001AccountRegistrationTest extends BaseTest {
 
     @Test(groups = {"regression", "master"})

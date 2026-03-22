@@ -13,12 +13,21 @@ on:
     inputs:
       browserName:
         type: choice
+        required: true
         description: 'Select browser for execution'
         options:
           - chrome
           - firefox
           - edge
         default: chrome
+      testName:
+        type: string
+        description: 'Enter the regex to run the tests'
+        default: testCases.TC001AccountRegistrationTest
+      xmlName:
+        type: string
+        description: 'Enter the xml to run the tests'
+        default: master.xml
 
   push:
     branches: [ "main" ]
@@ -38,9 +47,19 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn test -Dbrowser=${{inputs.browserName}} -Dmaven.test.failure.ignore=true
-
+    - name: Run tests with regex
+      if: ${{inputs:testName}}
+      run: > 
+            mvn test 
+            -Dbrowser=${{inputs.browserName}} 
+            -Dtest=${{inputs.testName}}
+            -Dmaven.test.failure.ignore=true
+    - name: Run tests with xml
+      if: ${{inputs:xmlName}}
+      run: >
+            mvn test 
+            -DsuiteXmlFile=${{inputs.xmlName}} 
+            -Dmaven.test.failure.ignore=true
     - name: upload artifact
       uses: actions/upload-artifact@v4
       with:

@@ -19,8 +19,6 @@ public class DriverFactory {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless=new");
                 options.addArguments("--disable-gpu");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--start-maximized");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
@@ -31,6 +29,8 @@ public class DriverFactory {
                 break;
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless=new");
+                edgeOptions.addArguments("--disable-gpu");
                 driver = new EdgeDriver(edgeOptions);
                 break;
             default:

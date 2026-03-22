@@ -15,6 +15,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <browser>chrome</browser>
+    <suiteXmlFile>master.xml</suiteXmlFile>
+    <os>linux</os>
   </properties>
 <build>
     <plugins>
@@ -24,12 +27,12 @@
         <version>3.5.5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>master.xml</suiteXmlFile>
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
           </suiteXmlFiles>
           <!--<groups>master</groups>-->
           <systemPropertyVariables>
-            <os>linux</os>
-            <browser>chrome</browser>
+            <os>${os}</os>
+            <browser>${browser}</browser>
           </systemPropertyVariables>
         </configuration>
       </plugin>

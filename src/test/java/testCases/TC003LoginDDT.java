@@ -2,6 +2,7 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
@@ -9,6 +10,7 @@ import pageObjects.MyAccountPage;
 import testBase.BaseTest;
 import utils.DataProviders;
 
+@Listeners(utils.ExtentReportUtility.class)
 public class TC003LoginDDT extends BaseTest {
 
     @Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = {"dataDriven", "master"})
