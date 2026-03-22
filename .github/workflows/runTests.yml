@@ -27,7 +27,6 @@ on:
       xmlName:
         type: string
         description: 'Enter the xml to run the tests'
-        default: master.xml
 
   push:
     branches: [ "main" ]
@@ -48,14 +47,14 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run tests with regex
-      if: ${{inputs:testName}}
+      if: '${{inputs:testName}}'
       run: > 
             mvn test 
             -Dbrowser=${{inputs.browserName}} 
             -Dtest=${{inputs.testName}}
             -Dmaven.test.failure.ignore=true
     - name: Run tests with xml
-      if: ${{inputs:xmlName}}
+      if: '${{inputs:xmlName}}'
       run: >
             mvn test 
             -DsuiteXmlFile=${{inputs.xmlName}} 
